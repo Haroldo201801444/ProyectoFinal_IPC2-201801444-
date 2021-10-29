@@ -1,0 +1,33 @@
+{% extends 'web/layout.html' %} {% block content %}
+<div class="row">
+    <div class="col-6 p-3 border">
+        <h2 class="text-center">Entrada</h2>
+        <div class="form-floating">
+            <textarea class="form-control" name="entrada" style="height: 55vh" readonly>
+            Aqui ira el archivo de entrada xml
+            </textarea>
+        </div>
+    </div>
+    <div class="col-6 p-3 border">
+        <h2 class="text-center">Salida</h2>
+        <div class="form-floating">
+            <textarea class="form-control" name="salida" style="height: 55vh" readonly>
+                Aqui ira el archivo de salida xml
+            </textarea>
+        </div>
+    </div>
+</div>
+<div class="row p-3">
+    <form method="" class="row p-2">
+        <div class="col-8">
+            <input type="file" name="documento" class="form-control" />
+        </div>
+        <div class="col-2 d-grid">
+            <input type="submit" value="Enviar" class="btn-sm btn-primary" />
+        </div>
+        <div class="col-2 d-grid">
+            <button type="reset" name="resetiado" class="btn-sm btn-danger">Reiniciar</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
